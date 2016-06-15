@@ -23,7 +23,7 @@ class TestComputerPlayer<MiniTest::Test
 
   def test_player_presents_card
     @computer_player.gets_cards(@deck)
-    assert_equal([[4, "♦️"]], @computer_player.presents_card(@computer_deck))
+    assert_equal([[4, "♦️"]], @computer_player.presents_card())
   end
 
   

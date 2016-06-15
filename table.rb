@@ -6,8 +6,8 @@ class Table
     @game_space = []
   end
 
-  def table_gets_card(player)
-    @game_space << player.presents_card(player_deck)
+  def table_gets_card(game)
+    @game_space << @current_player.presents_card(player_deck)
   end
 
 end

@@ -17,7 +17,7 @@ class TestGame<MiniTest::Test
     @deck = Deck.new(@pack)
     @table = Table.new
     @players = [@computer_player, @player]
-    @game=Game.new(@players, @deck, @table)
+    @game=Game.new(@players, @deck)
   end
 
   def test_game_starts_with_two_players
@@ -28,7 +28,9 @@ class TestGame<MiniTest::Test
     assert_equal(@computer_player, @game.current_player)
   end
 
-  
+  def test_table_has_card
+    assert_equal([[[4, "♦️"]]], @game.table_card)
+  end
 
 
 

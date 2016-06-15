@@ -11,7 +11,7 @@ class ComputerPlayer
     @computer_deck << deck.deal(1) if !deck.nil?
   end
 
-  def presents_card(player_deck)
+  def presents_card()
     return @computer_deck.pop
   end
 

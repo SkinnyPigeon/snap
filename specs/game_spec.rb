@@ -54,7 +54,9 @@ class TestGame<MiniTest::Test
 
   def test_compare_cards
     @computer_player.gets_cards(@deck)
-    @player.gets_cards(@deck)    
+    @player.gets_cards(@deck)
+    @game.table_card   
+    @game.update_current_player 
     assert_equal(true, @game.compare_cards)
   end
 

@@ -26,4 +26,18 @@ class TestPlayer<MiniTest::Test
     assert_equal([[4, "♦️"]], @player.presents_card(@player_deck))
   end
 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 end

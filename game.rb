@@ -35,25 +35,52 @@ class Game
     return top_card == latest_card
   end
 
-  def button_press
-   @key_press << @table_card
-  end
-
-    gap = rand(0...600)
-    for i in 0..gap
-      system("stty raw -echo")
-      char = STDIN.read_nonblock(1) rescue nil
-      system("stty -raw echo")
-      if (char)
-        return button_pressed
-        break
-      end
+  def player_one_calls_snap
+    hits = gets.chomp
+    if hits == "l"
+      return compare_cards if !hits.nil?
     end
-
-  def right_snap
-    binding.pry
-    return @key_press[-1][0].include?(@key_press[-2][0])
   end
+
+  def player_two_calls_snap
+    hits = gets.chomp
+    if hits == "s"
+      return compare_cards if !hits.nil?
+    end
+  end
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 end
+
+# def right_snap
+#   binding.pry
+#   return @key_press[-1][0].include?(@key_press[-2][0])
+# end
+
+# def button_press
+#  @key_press << @table_card
+# end
+
+
+# gap = rand(0...600)
+# for i in 0..gap
+#   system("stty raw -echo")
+#   char = STDIN.read_nonblock(1) rescue nil
+#   system("stty -raw echo")
+#   if (char)
+#     return button_pressed
+#     break
+#   end
+# end

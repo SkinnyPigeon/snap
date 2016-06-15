@@ -72,17 +72,20 @@ class TestGame<MiniTest::Test
   #   assert_equal(true, @game.player_one_calls_snap)
   # end
 
-  def test_player_two_calls_snap
-    @player2.gets_cards(@deck)
-    @player.gets_cards(@deck)
-    @game.table_card   
-    @game.update_current_player 
-    @game.table_card
-    assert_equal(true, @game.player_two_calls_snap)
-  end
+  # def test_player_two_calls_snap
+  #   @player2.gets_cards(@deck)
+  #   @player.gets_cards(@deck)
+  #   @game.table_card   
+  #   @game.update_current_player 
+  #   @game.table_card
+  #   assert_equal(true, @game.player_two_calls_snap)
+  # end
 
-  def test_player_one_places_card
-  end
+  # def test_player_one_places_card
+  #   @player2.gets_cards(@deck)
+  #   @player.gets_cards(@deck)
+  #   assert_equal([[4, "♦️"]], @game.player_one_places_card)
+  # end
 
 end
 

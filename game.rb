@@ -37,20 +37,31 @@ class Game
 
   def player_one_calls_snap
     hits = gets.chomp
-    if hits == "l"
+    if hits == "s"
       return compare_cards if !hits.nil?
     end
   end
 
   def player_two_calls_snap
     hits = gets.chomp
-    if hits == "s"
+    if hits == "l"
       return compare_cards if !hits.nil?
     end
   end
 
+  def player_one_places_card
+    hits = gets.chomp
+    if hits == "a"
+      return @current_player.presents_card if !hits.nil?
+    end
+  end
 
-
+  def player_two_places_card
+    hits = gets.chomp
+    if hits == "k"
+      return @current_player.presents_card if !hits.nil?
+    end
+  end
 
 
 

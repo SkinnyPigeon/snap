@@ -18,4 +18,18 @@ class Player
     return @player_deck.pop
   end
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 end

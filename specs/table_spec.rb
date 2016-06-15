@@ -19,8 +19,9 @@ class TestTable<MiniTest::Test
     assert_equal(0, @table.game_space.count)
   end
 
-  def test_table_can_receive_cards
-    assert_equal([[[4, "♦️"]]], @table.table_gets_card(@player))
-  end
+  # def test_table_can_receive_cards
+    
+  #   assert_equal([[[4, "♦️"]]], @table.table_gets_card(@player))
+  # end
 
 end

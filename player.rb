@@ -1,4 +1,3 @@
-# require_relative 'snap_cards'
 require("pry-byebug")
 
 class Player

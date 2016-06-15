@@ -14,9 +14,8 @@ class Player
   end
 
   def presents_card()
-    return @player_deck.pop
+    return @player_deck.pop()
   end
-
 
 
 

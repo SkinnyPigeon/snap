@@ -63,6 +63,14 @@ class TestGame<MiniTest::Test
     assert_equal(true, @game.compare_cards)
   end
 
+
+  def test_if_game_is_won
+    assert_equal(true, @game.is_won?)
+  end
+
+
+
+
   # def test_player_one_calls_snap
   #   @player2.gets_cards(@deck)
   #   @player.gets_cards(@deck)

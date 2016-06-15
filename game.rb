@@ -7,7 +7,7 @@ class Game
     @deck = deck
     @table = []
     @current_player = players[0]
-    @winner = nil
+    @loser = nil
     @key_press = []
   end
 
@@ -63,11 +63,13 @@ class Game
     end
   end
 
-
-
-
-
-
+  def is_won?
+    for player in @players
+      @loser = player if @player_deck == nil
+    end
+    binding.pry
+    return !@loser.nil?
+  end
 
 
 

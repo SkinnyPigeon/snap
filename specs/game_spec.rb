@@ -34,7 +34,21 @@ class TestGame<MiniTest::Test
     assert_equal([[[4, "♦️"]]], @game.table_card)
   end
 
+  def test_update_current_player
+    @game.update_current_player()
+    assert_equal(@player, @game.current_player)
+  end
 
+  def test_top_card
+    @computer_player.gets_cards(@deck)
+    @player.gets_cards(@deck)
+    assert_equal( [[4, "♦️"]], @game.top_card)
+  end
+
+
+  # def test_compare_cards
+  #   assert_equal(true, @game.compare_cards)
+  # end
 
 
 

@@ -2,6 +2,8 @@ require_relative './player'
 require_relative './snap_cards'
 require_relative './game'
 require_relative './table'
+require_relative './viewer'
+
 
 class Play
 
@@ -21,8 +23,13 @@ numbers = ["A", 2, 3, 4]
 @game=Game.new(@players, @deck)
 
 
+  def run()
+    while(!@game.is_won?)
+      @viewer.start
+    end
 
-puts "Your go #{@player1.name}"
+
+  end
 end
 
 

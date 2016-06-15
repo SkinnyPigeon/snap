@@ -29,6 +29,8 @@ class TestGame<MiniTest::Test
   end
 
   def test_table_has_card
+    @computer_player.gets_cards(@deck)
+    @player.gets_cards(@deck)
     assert_equal([[[4, "♦️"]]], @game.table_card)
   end
 

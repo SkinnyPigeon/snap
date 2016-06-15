@@ -51,6 +51,7 @@ class Game
     end
 
   def right_snap
+    binding.pry
     return @key_press[-1][0].include?(@key_press[-2][0])
   end
 

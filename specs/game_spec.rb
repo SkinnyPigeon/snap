@@ -62,15 +62,6 @@ class TestGame<MiniTest::Test
     assert_equal(true, @game.compare_cards)
   end
 
-  def test_computer_player_hits_snap
-    @computer_player.gets_cards(@deck)
-    @player.gets_cards(@deck)
-    @game.table_card
-    @game.update_current_player 
-    @game.table_card
-    @game.compare_cards
-    assert_equal(2, @game.player_hits_snap)   
-  end
 
   def test_snap_was_right
     @computer_player.gets_cards(@deck)
@@ -83,4 +74,20 @@ class TestGame<MiniTest::Test
   end
 
 
+
+
+
+
+
 end
+
+
+# def test_computer_player_hits_snap
+#   @computer_player.gets_cards(@deck)
+#   @player.gets_cards(@deck)
+#   @game.table_card
+#   @game.update_current_player 
+#   @game.table_card
+#   @game.compare_cards
+#   assert_equal(2, @game.player_hits_snap)   
+# end

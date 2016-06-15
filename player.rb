@@ -14,4 +14,8 @@ class Player
     @player_deck << deck.deal(1) if !deck.nil?
   end
 
+  def presents_card(player_deck)
+    return @player_deck.pop
+  end
+
 end
